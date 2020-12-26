@@ -28,4 +28,4 @@ my_list = ["winter",
            "autumn",
            "winter"
            ]
-print(my_list[month + 1])
+print(my_list[month - 1])
