@@ -8,6 +8,15 @@
 <body>
     <script>
         'use strict';
+        let a = +prompt("Enter number 'a'");
+        let b = +prompt("Enter number 'b'");
+        if (a > 0 && b > 0) {
+            alert(Math.abs(a - b));
+        } else if (a < 0 && b < 0) {
+            alert(a * b);
+        } else {
+            alert(a + b)
+        }
     </script>
 </body>
 </html>
