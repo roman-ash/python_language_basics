@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        'use script'
+        'use strict'
         const products = [
             {
                 id: 3,
@@ -35,10 +35,21 @@
                 price: 78
             }
         ];
+        //1
         const with_photo = []
-        //for (let i = 0; i < products.length; i++) {
-        //    if products[i].photos
-        //}
+        let j = 0
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].photos && products[i].photos != '') {
+                with_photo[j] = products[i];
+                j++
+            }
+        };
+        console.log(with_photo);
+        //2
+        products.sort(function(a, b) {
+            return a.price - b.price;
+        });
+        console.log(products); 
     </script>
 </body>
 </html>
