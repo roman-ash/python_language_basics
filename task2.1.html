@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+         //пример 1 (pre-increment увеличивает и возвращает на 1 больше. (2))
+        let a = 1, b = 1, c, d;
+        c = ++ a;
+        alert(c);
+        //пример 2 (post-increment возвращает исходную b и после увеличивает(1))
+        d = b++;
+        alert(d);
+        //премер 3 (к а (равной 2 после примера 1) прибавляется 1 и это попадает в вывод(5))
+        c = 2 + ++a;
+        alert(c);
+        //пример4 (в вывод попадает сумма с b, без прибавленной 1(4))
+        d = 2 + b++;
+        alert(d);
+    </script>
+</body>
+</html>
